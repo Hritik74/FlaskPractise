@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Fruits Dictionary</title>
+</head>
+<body>
+    <h1>Fruits Dictionary</h1>
+    <ul>
+        {% for fruit, data in fruits.items() %}
+            <li>
+                <strong>{{ fruit }}:</strong> {{ data.description }} - {{ data.quantity }} in stock
+            </li>
+        {% endfor %}
+    </ul>
+    <p>Total number of fruits: {{ total_fruits }}</p>
+</body>
+</html>
